@@ -1,22 +1,15 @@
-package net.londatiga.fsq;
+package com.sunay.fsqapp;
 
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.content.Context;
 
-/**
- * Manage access token and user name. Uses shared preferences to store access token
- * and user name.
- * 
- * @author Lorensius W. L T <lorenz@londatiga.net>
- *
- */
 public class FoursquareSession {
 	private SharedPreferences sharedPref;
 	private Editor editor;
 	
 	private static final String SHARED = "Foursquare_Preferences";
-	private static final String FSQ_USERNAME = "username";
+	private static final String FSQ_USERNAME = "user";
 	private static final String FSQ_ACCESS_TOKEN = "access_token";
 	
 	public FoursquareSession(Context context) {

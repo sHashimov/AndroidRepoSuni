@@ -1,4 +1,4 @@
-package net.londatiga.fsq;
+package com.sunay.fsqapp;
 
 import android.location.Location;
 
