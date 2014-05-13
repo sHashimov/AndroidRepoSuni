@@ -82,9 +82,9 @@ public class Main extends Activity {
 		tracker = new GPSTracker(Main.this);
 		if (tracker.canGetLocation()) {
 
-//		    double latitude = tracker.getLatitude();
-//		    double longitude = tracker.getLongitude();
-		    loadNearbyPlaces(42.692792, 23.352711);
+		    double latitude = tracker.getLatitude();
+		    double longitude = tracker.getLongitude();
+		    loadNearbyPlaces(latitude, longitude);
 		} else {
 		    // can't get location
 		    // GPS or Network is not enabled
