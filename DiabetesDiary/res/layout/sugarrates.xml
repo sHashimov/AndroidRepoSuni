@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#e7dcc0"
     android:orientation="vertical" >
 
     <TextView
@@ -14,10 +15,7 @@
         android:id="@+id/etDate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="date" >
-
-        <requestFocus />
+        android:ems="10" >
     </EditText>
 
     <TextView
@@ -30,8 +28,7 @@
         android:id="@+id/etTime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="time" />
+        android:ems="10" />
 
     <TextView
         android:id="@+id/timeTV"
@@ -62,8 +59,7 @@
         android:id="@+id/etGlucose"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number" />
+        android:ems="10" />
 
     <Button
         android:id="@+id/sqlButtonUpdate"
@@ -88,8 +84,7 @@
         android:id="@+id/etInfoByDate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number" />
+        android:ems="10" />
 
     <Button
         android:id="@+id/bGetInfo"
