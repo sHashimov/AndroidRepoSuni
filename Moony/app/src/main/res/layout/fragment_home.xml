@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.sunay.moony.ui.views.RobotoTextView
+            android:id="@+id/tv_city_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="28dp"
+            android:layout_marginTop="28dp"
+            android:text="-"
+            android:textColor="@color/primary_secondary_text"
+            android:textSize="30sp"/>
+
+        <FrameLayout
+            android:id="@+id/fl_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_city_name">
+
+            <com.sunay.moony.ui.views.RobotoTextView
+                android:id="@+id/tv_day_or_night"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="25dp"
+                android:text="--"
+                android:textAllCaps="true"
+                android:textColor="@color/primary_secondary_text"
+                android:textSize="23sp"
+                app:robo_button_typeface="@string/Roboto_Bold"/>
+
+            <com.sunay.moony.util.CircularSeekBar
+                android:id="@+id/circularSeekBar1"
+                android:layout_width="match_parent"
+                android:layout_height="257dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:clickable="false"
+                app:circle_x_radius="250dp"
+                app:circle_y_radius="250dp"
+                app:end_angle="360"
+                app:max="100"
+                app:pointer_alpha_ontouch="100"
+                app:pointer_color="#0174DF"
+                app:pointer_halo_color="#880174DF"
+                app:progress="25"
+                app:start_angle="180"
+                app:use_custom_radii="true"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_left"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"/>
+
+                <com.sunay.moony.ui.views.RobotoTextView
+                    android:id="@+id/tv_sunrise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="--:--"
+                    android:textColor="@color/primary_secondary_text"
+                    android:textSize="20sp"
+                    app:robo_button_typeface="@string/Roboto_Regular"/>
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal">
+
+                <com.sunay.moony.ui.views.RobotoTextView
+                    android:id="@+id/tv_sunset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:text="--:--"
+                    android:textColor="@color/primary_secondary_text"
+                    android:textSize="20sp"
+                    app:robo_button_typeface="@string/Roboto_Regular"/>
+
+                <ImageView
+                    android:id="@+id/iv_right"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"/>
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <com.sunay.moony.ui.views.RobotoTextView
+            android:id="@+id/tv_condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fl_progress"
+            android:layout_centerHorizontal="true"
+            android:text="--"
+            android:textAllCaps="true"
+            android:textColor="@color/primary_secondary_text"
+            android:textSize="20sp"
+            app:robo_button_typeface="@string/Roboto_Regular"/>
+
+        <com.sunay.moony.ui.views.RobotoTextView
+            android:id="@+id/tv_humidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_condition"
+            android:layout_centerHorizontal="true"
+            android:text="Humidity :--"
+            android:textColor="@color/primary_secondary_text"
+            android:textSize="20sp"
+            app:robo_button_typeface="@string/Roboto_Regular"/>
+
+        <com.sunay.moony.ui.views.RobotoTextView
+            android:id="@+id/tv_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:layout_below="@+id/tv_humidity"
+            android:layout_centerHorizontal="true"
+            android:text="20.0"
+            android:textColor="@color/primary_secondary_text"
+            android:textSize="40sp"
+            app:robo_button_typeface="@string/Roboto_Regular"/>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rl_container"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.9"
+                android:background="@drawable/sunny_back"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+    <com.sunay.moony.ui.views.RobotoTextView
+        android:id="@+id/tv_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Monday"
+        android:textColor="@color/title_text_color"
+        android:textSize="20sp"
+        app:robo_button_typeface="@string/Roboto_Regular"/>
+
+    <com.sunay.moony.ui.views.RobotoTextView
+        android:id="@+id/tv_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="20.0"
+        android:textColor="@color/title_text_color"
+        android:textSize="30sp"
+        app:robo_button_typeface="@string/Roboto_Regular"/>
+
+    <com.sunay.moony.ui.views.RobotoTextView
+        android:id="@+id/tv_condition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_day"
+        android:textAllCaps="true"
+        android:textColor="@color/title_text_color"
+        android:textSize="20sp"
+        app:robo_button_typeface="@string/Roboto_Regular"/>
+
+</RelativeLayout>

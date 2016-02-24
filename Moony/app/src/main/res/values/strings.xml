@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Moony</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_edit">Edit Profile</string>
+    <string name="cancel">Cancel</string>
+    <string name="GPSAlertDialogTitle">GPS Disabled</string>
+    <string name="GPSAlertDialogMessage">The app requires the GPS Location\nto be enabled. It is also\nrecommended to disable WiFi\nlocation for best performance.\nPress Location Settings and\n-Enable GPS Location\n-Disable WiFi Location</string>
+    <!--Drawer strings-->
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+
+    <!-- Common strings -->
+    <string name="ok">OK</string>
+    <string name="error">Error</string>
+    <string name="no_internet_connection_">No Internet Connection!</string>
+    <string name="server_error">Can\'t connect to the server.</string>
+    <string name="mutual_authentication_error">Oops. An error occurred while retrieving data from InboxDollars. Please try again.</string>
+    <string name="please_wait">Please wait</string>
+    <string name="loading_">Loading...</string>
+    <string name="settings">Settings</string>
+    <!-- Common strings End -->
+
+
+    <!-- Roboto typefaces -->
+    <string name="Roboto_BlackItalic">Roboto_BlackItalic</string>
+    <string name="Roboto_Bold">Roboto_Bold</string>
+    <string name="Roboto_BoldCondensed">Roboto_BoldCondensed</string>
+    <string name="Roboto_BoldCondensedItalic">Roboto_BoldCondensedItalic</string>
+    <string name="Roboto_BoldItalic">Roboto_BoldItalic</string>
+    <string name="Roboto_Condensed">Roboto_Condensed</string>
+    <string name="Roboto_CondensedItalic">Roboto_CondensedItalic</string>
+    <string name="Roboto_Italic">Roboto_Italic</string>
+    <string name="Roboto_Light">Roboto_Light</string>
+    <string name="Roboto_LightItalic">Roboto_LightItalic</string>
+    <string name="Roboto_Medium">Roboto_Medium</string>
+    <string name="Roboto_MediumItalic">Roboto_MediumItalic</string>
+    <string name="Roboto_Regular">Roboto_Regular</string>
+    <string name="Roboto_Thin">Roboto_Thin</string>
+    <string name="Roboto_ThinItalic">Roboto_ThinItalic</string>
+
+
+</resources>
+
